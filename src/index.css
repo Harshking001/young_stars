@@ -1,0 +1,49 @@
+:root{
+    --white: white;
+    --bg: #282828;
+    --primary: rgb(255, 165, 0);
+    --text: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --about: linear-gradient(45deg,rgb(1, 126, 209),rgb(174, 0, 255));
+    --grey: rgb(59, 59, 59);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg);
+    color: var(--text);
+    
+    .button{
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin: 4px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        background: var(--bg);
+        position: relative;
+    }
+
+    .dot{
+        height: 5px;
+        width: 5px;
+        background: rgb(221, 0, 0);
+        position: absolute;
+        border-radius: 50%; 
+        right: 15%;
+        top: 15%; 
+    }
+
+    .button:hover{
+        scale: 1.05;
+    }
+
+    .link{
+        text-decoration: none;
+        color: unset;
+        position: relative;
+    }
+}

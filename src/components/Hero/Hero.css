@@ -1,0 +1,127 @@
+#hero {
+  padding: 10px;
+}
+
+#hero-h1 {
+  text-shadow: 2px 2px 5px black;
+  color: var(--white);
+  font-family: fantasy;
+  letter-spacing: 1px;
+}
+
+.hero {
+  height: 70vh;
+  background: var(--grey);
+  border-radius: 10px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .link {
+  bottom: 15px;
+  right: 15px;
+  position: absolute;
+  z-index: 2;
+  padding: 10px 20px;
+  border: 0.3px solid;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  backdrop-filter: blur(3px);
+  text-decoration: none;
+  transition: letter-spacing 300ms ease;
+}
+
+.hero .link:hover {
+  letter-spacing: 3px;
+}
+
+.hero .no {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  right: 25px;
+  top: 10px;
+  font-size: 13px;
+}
+
+.hero .dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 2;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.hero .no-dot {
+  appearance: none;
+  border: none;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  background: rgba(190, 190, 190, 0.85);
+  border-radius: 20px;
+  cursor: pointer;
+  transition:
+    width 400ms ease,
+    flex-basis 400ms ease,
+    background-color 400ms ease,
+    box-shadow 400ms ease;
+}
+
+.hero .no-dot.active {
+  width: 25px;
+  flex-basis: 25px;
+  background: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 50vh;
+    min-height: 280px;
+  }
+
+  .hero-track img {
+    padding: 10px;
+  }
+
+  .hero .no {
+    right: 15px;
+    top: 15px;
+  }
+
+  .hero .dots {
+    bottom: 22px;
+  }
+}

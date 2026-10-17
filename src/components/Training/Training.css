@@ -1,0 +1,43 @@
+#training{
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    /* display: flex; */
+    h1{
+        margin: 10px 0;
+    }
+    
+
+    .training{
+        display: flex;
+        .train{
+            background: var(--white);
+            height: 250px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 720px){
+    #training .training{
+        flex-direction: column;
+        .train{
+            h1{
+                font-size: 130%;
+            }
+            height: 350px;
+        }
+    }
+}

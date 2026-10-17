@@ -41,9 +41,15 @@ body{
         scale: 1.05;
     }
 
-    .link{
+    .link,a{
+        transition: all 0.5s ease-in;
         text-decoration: none;
         color: unset;
         position: relative;
+    }
+
+    a:hover{
+     letter-spacing: 2px;
+     color: rgb(212, 0, 255);
     }
 }

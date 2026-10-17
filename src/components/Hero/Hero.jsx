@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 
 const images = [
-  "./images/image (12).jpg",
-  "./images/image (2).jpg",
-  "./images/image (5).jpg",
-  "./images/image (9).jpg",
+  "/young_stars/images/image (12).jpg",
+  "/young_stars/images/image (2).jpg",
+  "/young_stars/images/image (5).jpg",
+  "/young_stars/images/image (9).jpg",
 ];
 
 const Hero = () => {
@@ -52,7 +52,6 @@ const Hero = () => {
   return (
     <section id="hero">
       <h1 id="hero-h1">Young Stars Academy</h1>
-
       <p>
        Every champion starts with a dream. At Young Stars Academy, we turn passion into purpose, talent into skill, and young dreams into a brighter future for Kenyan sports.
         <i className="bi bi-pin"></i>
@@ -97,11 +96,6 @@ const Hero = () => {
           ))}
         </div>
       </div>
-
-      <input
-        type="color"
-        onChange={(e) => console.log(e.target.value)}
-      />
     </section>
   );
 };

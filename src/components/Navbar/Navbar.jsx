@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <img src="./favicon.png" className="logo" alt="logo" />
+        <img src="/young_stars/favicon.png" className="logo" alt="logo" />
         <div className="nav-links">
           
           <Link  className="button link"><div className="dot"></div> news</Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <Link className="chat_button">
           <i className='bi bi-chat-fill'></i>
-          <img src="./cursor.png" alt="ball" className="ball" />
+          <img src="/young_stars/cursor.png" alt="ball" className="ball" />
           <div className="dot"></div>
         </Link>
       </nav>

@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 const Mask = () => {
     useGSAP(()=>{
         gsap.to("#mask",{
-            maskSize: 7000,
+            maskSize: 8000,
             scrollTrigger: {
                 trigger: "#mask",
                 start: "top top",
@@ -19,7 +19,7 @@ const Mask = () => {
     },[])
   return (
     <section id="mask">
-      <img src="/young_stars/stadium2.jpg" alt="image" />
+      <img src="../young_stars/stadium2.jpg" alt="image" />
     </section>
   )
 }

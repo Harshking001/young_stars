@@ -10,6 +10,8 @@
 
     .training{
         display: flex;
+        justify-content: center;
+        align-items: center;
         .train{
             background: var(--white);
             height: 250px;

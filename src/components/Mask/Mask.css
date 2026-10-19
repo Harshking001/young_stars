@@ -1,7 +1,7 @@
 #mask{
     width: 100%;
     height: 100dvh;
-    mask-image: url("/young_stars/mask2.png");
+    mask-image: url("/public/mask2.png");
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 500px;

@@ -1,0 +1,11 @@
+#achievements{
+    .achievements{
+        display: flex;
+        overflow-x: auto;
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

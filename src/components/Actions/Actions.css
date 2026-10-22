@@ -1,7 +1,7 @@
 #actions{
     margin-top: 60px;
     padding: 5px;
-
+    
     .actions{
         display: flex;
         flex-direction: column;

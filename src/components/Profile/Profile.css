@@ -1,0 +1,28 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/image (8).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+
+    #profile{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        bottom: -45px;
+
+        #profile-pic{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--bg);
+            border: 1px solid;
+        }
+    }
+    
+}

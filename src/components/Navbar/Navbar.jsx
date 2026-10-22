@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="nav-links">
           
           <Link  className="button link"><div className="dot"></div> news</Link>
-          <Link  className="button link explore_button">explore</Link>
+          <Link  className="button link explore_button" to="/young_stars/explore">explore</Link>
           <Link  className="link"><i className="bi bi-info-circle"></i></Link>
         </div>
 

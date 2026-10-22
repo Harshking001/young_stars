@@ -6,7 +6,7 @@
     height: 80px;
     
     
-    h1{
+    h2{
         color: var(--white);
         text-shadow: 2px 2px 2px var(--text);
     }

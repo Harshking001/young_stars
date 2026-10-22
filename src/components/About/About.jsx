@@ -4,20 +4,20 @@ const About = () => {
   return (
     <div id="about">
       <div className="about">
-        <h1>95+</h1>
-        <p>active players</p>
+        <h2>95+</h2>
+        <h6>active players</h6>
       </div>
       <div className="about">
-        <h1>2</h1>
-        <p>pro coaches</p>
+        <h2>2</h2>
+        <h6>pro coaches</h6>
       </div>
       <div className="about">
-        <h1>10+</h1>
-        <p>trophies</p>
+        <h2>10+</h2>
+        <h6>trophies</h6>
       </div>
       <div className="about">
-        <h1>100%</h1>
-        <p>dedication</p>
+        <h2>100%</h2>
+        <h6>dedication</h6>
       </div>
     </div>
   )

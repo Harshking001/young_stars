@@ -2,6 +2,7 @@
     .achievements{
         display: flex;
         overflow-x: auto;
+        background: white;
 
         img{
             width: 150px;

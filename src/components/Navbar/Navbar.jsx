@@ -18,12 +18,12 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <img src="/young_stars/favicon.png" className="logo" alt="logo" />
+        <Link to="/young_stars"><img src="/young_stars/favicon.png" className="logo" alt="logo" /></Link>
         <div className="nav-links">
           
-          <Link  className="button link"><div className="dot"></div> news</Link>
+          <Link  className="button link" to="/young_stars/news"><div className="dot" ></div> news</Link>
           <Link  className="button link explore_button" to="/young_stars/explore">explore</Link>
-          <Link  className="link"><i className="bi bi-info-circle"></i></Link>
+          {/* <Link  className="link"><i className="bi bi-info-circle"></i></Link> */}
         </div>
 
         <Link className="chat_button">

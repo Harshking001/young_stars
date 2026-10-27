@@ -6,9 +6,9 @@ const Actions = () => {
       <div className="actions">
         <a href="" className="tiktok">TikTok</a>
         <div className="more-links">
-            <i className="bi bi-instagram">i</i>
-            <i className="bi bi-whatsapp">w</i>
-            <i className="bi bi-youtube">y</i>
+            <i className="bi bi-instagram"></i>
+            <i className="bi bi-whatsapp"></i>
+            <i className="bi bi-youtube"></i>
         </div>
       </div>
     </div>

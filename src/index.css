@@ -17,6 +17,7 @@
 body{
     background: var(--bg);
     color: var(--text);
+    overflow-x: hidden;
     
     .button{
         padding: 10px 15px;
@@ -52,5 +53,120 @@ body{
     a:hover{
      letter-spacing: 2px;
      color: rgb(212, 0, 255);
+    }
+    h1{
+        text-align: center;
+    }
+    #calender{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        overflow: auto;
+    
+        .calender{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 10px;
+            width: 100%;
+            padding-right: 30px;
+            border-radius: 15px;
+            position: relative;
+            justify-content: center;
+            height: 150px;
+            background: white;
+            transition: all 1s ease;
+            cursor: pointer;
+
+            p{
+                position: absolute;
+                transform: rotate(90deg);
+                right: 0;
+                color: rgb(5, 187, 5);
+            }
+
+            h1,h5{
+                color: rgb(241, 81, 7);
+            }
+
+            i{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        }
+
+        .calender:hover{
+            box-shadow: 3px 3px 10px;
+        }
+    }
+
+    #progress{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+
+        i{
+            font-size: 300%;
+            border: 1px solid;
+            border-radius: 50%;
+            padding: 10px 15px;
+            color: rgb(255, 187, 0);
+            background: white;
+        }
+
+        p{
+            color: rgb(2, 218, 2);
+        }
+
+        .progress{
+            width: 100%;
+            height: 20px;
+            background: white;
+            border-radius: 5px;
+            margin: 5px 0;
+            .percent{
+                width: 80%;
+                height: 100%;
+                background: rgb(255, 187, 0);
+                border-radius: 5px;
+            }
+        }
+    }
+
+    #ratting{
+        padding: 10px;
+        .ratting{
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            background: white;
+            margin: 5px 0;
+
+            .stars{
+                display: flex;
+                color: rgb(241, 158, 4);
+            }
+
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid;
+            }
+        }
+    }
+}
+
+@media(min-width: 820px){
+    body {
+        #calender{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }
